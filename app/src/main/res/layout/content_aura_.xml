@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="com.example.sanjay.aurademo.Aura_Activity"
+tools:showIn="@layout/activity_aura_">
+    <TextView android:text="How are you feeling right now!!!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your mood."
+        android:id="@+id/selectMood"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/selectMood"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which GENRE do you prefere "
+        android:id="@+id/genre"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blues"
+        android:id="@+id/Blues"
+        android:checked="false"
+        android:layout_alignTop="@+id/Country"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:id="@+id/Country"
+        android:checked="false"
+        android:layout_alignTop="@+id/Rock"
+        android:layout_toRightOf="@+id/Blues"
+        android:layout_toEndOf="@+id/Blues" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock"
+        android:id="@+id/Rock"
+        android:checked="false"
+        android:layout_alignTop="@+id/Dance"
+        android:layout_toRightOf="@+id/Country"
+        android:layout_toEndOf="@+id/Country" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dance"
+        android:id="@+id/Dance"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/Rock"
+        android:layout_toEndOf="@+id/Rock"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluegraa"
+        android:id="@+id/BlueGrass"
+        android:layout_below="@+id/Blues"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electronic"
+        android:id="@+id/Electronic"
+        android:layout_alignBottom="@+id/BlueGrass"
+        android:layout_toRightOf="@+id/BlueGrass"
+        android:layout_toEndOf="@+id/BlueGrass"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Funk"
+        android:id="@+id/Funk"
+        android:layout_below="@+id/Rock"
+        android:layout_toRightOf="@+id/Electronic"
+        android:layout_toEndOf="@+id/Electronic"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jazz"
+        android:id="@+id/Jazz"
+        android:layout_below="@+id/Dance"
+        android:layout_toRightOf="@+id/Funk"
+        android:layout_toEndOf="@+id/Funk"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hip Hpp"
+        android:id="@+id/HipHop"
+        android:layout_below="@+id/BlueGrass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pop"
+        android:id="@+id/Pop"
+        android:layout_below="@+id/BlueGrass"
+        android:layout_toRightOf="@+id/HipHop"
+        android:layout_toEndOf="@+id/HipHop"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Folk"
+        android:id="@+id/Folk"
+        android:checked="false"
+        android:layout_below="@+id/Electronic"
+        android:layout_toLeftOf="@+id/Dance"
+        android:layout_toStartOf="@+id/Dance" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metal"
+        android:id="@+id/Metal"
+        android:checked="false"
+        android:layout_below="@+id/Funk"
+        android:layout_alignRight="@+id/Jazz"
+        android:layout_alignEnd="@+id/Jazz" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Do you want to generate playlist"
+        android:id="@+id/playList"
+        android:textSize="20dp"
+        android:layout_below="@+id/HipHop"
+        android:layout_alignRight="@+id/Dance"
+        android:layout_alignEnd="@+id/Dance"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:id="@+id/btnYes"
+        android:layout_below="@+id/playList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:id="@+id/btnNo"
+        android:layout_below="@+id/playList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+<!--<Button-->
+<!--style="?android:attr/buttonStyleSmall"-->
+<!--android:layout_width="100dp"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Yes"-->
+<!--android:id="@+id/btnYes"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_alignParentLeft="true"-->
+<!--android:layout_alignParentStart="true"-->
+<!--android:layout_marginBottom="82dp" />-->
+
+<!--<Button-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="No"-->
+<!--android:id="@+id/btnNo"-->
+<!--android:layout_alignTop="@+id/btnYes"-->
+<!--android:layout_alignParentRight="true"-->
+<!--android:layout_alignParentEnd="true"-->
+<!--android:layout_marginRight="37dp"-->
+<!--android:layout_marginEnd="37dp" />-->
+<!--</RelativeLayout>-->
